@@ -1,0 +1,30 @@
+.grid {
+    margin: auto;
+    display: grid;
+    height: 70vmin;
+    width:70vmin;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+    border: solid 1px black;
+}
+
+.player {
+    background-color: blue;
+}
+
+.invader {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.laser {
+    background-color:pink;
+}
+
+.boom {
+    background-color: orange;
+}
+
+h1 {
+    text-align: center;
+}
