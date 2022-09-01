@@ -1,24 +1,28 @@
+* {
+    font-family: "Poppins" , sans-serif;
+}
+
 .grid {
     margin: auto;
     display: grid;
     height: 70vmin;
     width:70vmin;
-    grid-template-columns: repeat(15,1fr);
-    grid-template-rows: repeat(15,1fr);
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
     border: solid 1px black;
 }
 
 .player {
-    background-color: blue;
+    background-color: #7FBCD2;
 }
 
 .invader {
-    background-color: red;
+    background-color: #A5F1E9;
     border-radius: 50%;
 }
 
 .laser {
-    background-color:pink;
+    background-color:#FFEEAF;
 }
 
 .boom {
@@ -28,3 +32,106 @@
 h1 {
     text-align: center;
 }
+
+
+.control {
+    height: 10em;
+    display: flex;
+ }
+ 
+ 
+ .control > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+ }
+ 
+ .control > div > button {
+   height: 100%
+ }
+ 
+ button {
+    width: 5em;
+    font-family: "Poppins", sans-serif;
+ 
+ }
+ 
+ .game-control {
+    margin: auto;
+    margin-top: 0;
+ 
+ }
+ 
+ .game-control h1 {
+    text-align: center;
+ }
+ 
+
+.wrapper {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+ }
+ 
+ .collapsible {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+ }
+ 
+ .collapsible input {
+    display: none;
+ }
+ 
+ .collapsible label {
+    position: relative;
+    background: #888;
+    box-shadow: 0 5px 11px rgba(0,0,0,.1), 0 4px 11px rbga(0,0,0,.8);
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+ }
+ 
+ .collapsible label::after {
+    content:">";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 25px;
+    transition: all 0.3s ease;
+ 
+ }
+ 
+ .collapsible input:checked + label::after {
+    transform: rotate(90deg);
+    transform-origin: center;
+    transform-box: fill-box;
+ }
+ 
+ .collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+ }
+ .collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px rgba(0,0,0,.1), 0 4px 11px rbga(0,0,0,.8);
+    opacity: 1;
+    top: 0;
+ }
+ 
+ 
+ 
+ 
